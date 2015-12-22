@@ -14,7 +14,7 @@ public abstract class Crawler {
         this.name = this.getClass().getName()+":"+ UUID.randomUUID().toString();
     }
 
-    public abstract void crawl(CrawlRequest request);
+    public abstract CrawlResult crawl(CrawlRequest request);
 
     @Override
     public String toString(){
