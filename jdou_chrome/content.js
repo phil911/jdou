@@ -10,4 +10,12 @@ $(function(){
 		div.html("testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>testasdfa<br>");
 		$('body').append(div);
 	});
+	$(document).keydown(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		if(event.ctrlKey && event.keyCode==68){
+			console.log("Ctrl+d typed.");	
+		}
+		
+	});
 });
